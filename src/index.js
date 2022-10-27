@@ -4,6 +4,7 @@ import './index.css';
 import Titulo from './Titulo';
 import Paragrafo from './Paragrafo'
 import DataEHora from './DataEHora';
+import Tabuada from './Tabuada';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -16,6 +17,7 @@ function tick(){
       <Paragrafo/>
       <Paragrafo/>
       <DataEHora/>
+      <Tabuada/>
     </div>
   )
 };
