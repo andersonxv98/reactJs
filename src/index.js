@@ -6,6 +6,7 @@ import Paragrafo from './Paragrafo'
 import DataEHora from './DataEHora';
 
 import MainAppTabuada from './TabuadaAtt/TabuadaMainApp';
+import Menssagem from './Messagem';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -22,6 +23,7 @@ function main(){
         <Paragrafo/>
         <DataEHora/>
         <MainAppTabuada n = {value}/>
+        <Menssagem/>
       </div>
     </React.StrictMode>
   )
