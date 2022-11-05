@@ -2,11 +2,12 @@ import React from "react";
 export default class Menssagem extends React.Component{
     constructor(props){
         super(props);
-        this.msg = this.exibir("olá Mundo");
+        //this.msg = this.exibir("olá Mundo");
     }
 
     exibir = (msg)=>{
-        console.log("O botão foi clicado")
+        alert(msg);
+        console.log("O botão foi clicado");
         return msg;
     }
 
