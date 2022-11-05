@@ -1,6 +1,6 @@
 function Paragrafo() {
     return (
-        <p>Esse é um parágrafo</p>
+        <h1>Esse é um parágrafo</h1>
     );
 }
 
