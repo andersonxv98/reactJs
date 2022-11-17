@@ -13,12 +13,15 @@ import CicloUpdate from './CicloUpdate';
 import ShouldUpdate from './shoudUpdate';
 import Contador from './Contador';
 import TodoList from './TodoList';
+import Botao from './Calculadora/Botao';
+import Display from './Calculadora/Display';
+import Calculadora from './Calculadora/Calculadora.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 //function main(){
   //let value = prompt("Insira um valor inteiro");
-const item1 = {
+/*const item1 = {
   id:1,//(Date.now().toString) + "item 1",
   texto: "ITEM UM"
 }
@@ -28,15 +31,11 @@ const item2 = {
 }
 
 var itens = [item1, item2];
-
+*/
   root.render(
     <React.StrictMode>
       
-       
-        <Contador/>
-
-
-        <TodoList/>
+    <Calculadora/>
     </React.StrictMode>
   )
 //};

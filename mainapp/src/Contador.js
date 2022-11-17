@@ -17,6 +17,7 @@ import React from "react";
     }
 
     componentWillUnmount(){
+        console.log("compoenent will unmount")
         clearInterval(this.interval);
     }
 
