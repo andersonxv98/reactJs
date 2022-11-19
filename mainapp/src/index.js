@@ -13,9 +13,7 @@ import CicloUpdate from './CicloUpdate';
 import ShouldUpdate from './shoudUpdate';
 import Contador from './Contador';
 import TodoList from './TodoList';
-import Botao from './Calculadora/Botao';
-import Display from './Calculadora/Display';
-import Calculadora from './Calculadora/Calculadora.js';
+import App from './Calculadora/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -34,8 +32,9 @@ var itens = [item1, item2];
 */
   root.render(
     <React.StrictMode>
-      
-    <Calculadora/>
+      <div>
+        <App/>
+      </div>
     </React.StrictMode>
   )
 //};
