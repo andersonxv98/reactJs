@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Sbutton = styled.button`
+const SButton = styled.button`
 cursor: pointer;
 padding: 18px 8px;
 width: 100%;

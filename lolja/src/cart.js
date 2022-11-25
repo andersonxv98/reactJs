@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Button from "./button";
+import Button from "./button.js";
 
 const SLi= styled.li`
     margin-bottom: 10px;
@@ -41,7 +41,7 @@ const SDivUnits = styled.div`
  */
 
 function CartProduct({product, onChange, isLoading}) {
-    let elemt = (
+    return (
         <SLi>
             <SDivInfo>
                 <p>{product.name}</p>
@@ -49,19 +49,17 @@ function CartProduct({product, onChange, isLoading}) {
             </SDivInfo>
         
         <SDivUnits>
-         <button disabled={isLoading} on onClick={() =>{product, -1}}>
+         <button disabled={isLoading} on onClick={() =>onChange(product, -1)}>
             -
          </button>
          <p>{product.units}</p>
-         <button disabled={isLoading} on onClick={() =>{product, +1}}>
+         <button disabled={isLoading} on onClick={() =>onChange(product, +1)}>
             +
          </button>
         </SDivUnits>
         </SLi>        
 
     );
-
-    return elemt;
 }
 
 const SSection = styled.section`
